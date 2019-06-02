@@ -19,10 +19,9 @@ run everything else.
 ### Clone the Oak enclave git repository
 Clone the repository, goto to the cheri-hackathon directory, and then enter into the development environment shell. This gives everyone deterministic environment with exactly same tools and absolute paths.
  
-```
+```bash
 git clone https://www.github.com/oak-enclave
 cd oak-enclave/cheri-hackaton
-bash
 ./dev-env.sh
 ```
 During first run it will build the docker image and this process can take a while.
