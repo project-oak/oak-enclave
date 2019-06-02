@@ -22,3 +22,5 @@ clone llvm-project https://github.com/CTSRD-CHERI/llvm-project
 clone qemu https://github.com/CTSRD-CHERI/qemu
 clone binutils https://github.com/CTSRD-CHERI/binutils
 clone gdb https://github.com/CTSRD-CHERI/gdb
+clone cherios https://github.com/CTSRD-CHERI/cherios --recurse-submodules
+

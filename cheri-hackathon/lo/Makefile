@@ -15,7 +15,7 @@ GOT_ADDRESS=0xffffffff80700000
 all:	lo.elf
 
 clean:
-	rm -f *.o *.elf
+	rm -f *.o *.elf *.disasm
 
 lo.S.o: lo.S Makefile
 	$(CC) $(CFLAGS) -c $< -o $@
