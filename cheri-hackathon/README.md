@@ -38,7 +38,7 @@ As you have noticed the username inside docker container is 'dev' but the UID in
 
 You can also run `./dev-env.sh <command> <args..>` to run one-off command in dev-env shell.
 
-### Getting and building CHERI toolchain
+### Build CHERI toolchain and CHERI OS
 Run this once inside ./dev-env.sh shell:
 ```bash
 build-scripts/build-cheri-sdk.sh
@@ -48,13 +48,20 @@ This will automatically clone all necessary CHERI repos into `cheri-repos`
 and build CHERI SDK into `sdk` directory.
 This way you get a compiler, binutils, debugger and qemu.
 
-### Get 'lo' example running
+### Run the 'lo' example
 To check that everything works as expected, compile and run a minimal code and practice running it
 with Qemu and obtaining instruction traces.
 
 See [lo/README.md](lo/README.md) for instructions.
 
+### Run CHERI OS
+Run CHERI OS in QEMU:
+```bash
+build-scripts/run-cheri.sh
+```
+
 ### Start hacking
-Description of what we need to build is here: add TBD: link
+TODO: Description of what we need to build is here. \
+TODO: Add some links.
 
 Happy hacking!
