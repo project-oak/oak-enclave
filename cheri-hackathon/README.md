@@ -42,7 +42,7 @@ You can also run `./dev-env.sh <command> <args..>` to run one-off command in dev
 ### Getting and building CHERI toolchain
 Run this once inside ./dev-env.sh shell:
 ```bash
-build-scripts/build-cheri-toolchain.sh
+build-scripts/build-cheri-sdk.sh
 ```
 
 This will automatically clone all necessary CHERI repos into `cheri-repos`
