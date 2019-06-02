@@ -16,8 +16,8 @@ NOTE: this doesn't affect your current shell, so you might want to re-login for 
 of the usermod command or alternatively execute `sudo su -l $USER` to spawn a new shell where you
 run everything else.
 
-### Clone Oak enclave git repository
-git clone https://www.giihub.com/oak-enclave
+### Clone the Oak enclave git repository
+git clone https://www.giihub.com/oak-enclave \
 cd oak-enclave/cheri-hackaton
 ```
 ### Enter Development Environment Shell
