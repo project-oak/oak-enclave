@@ -15,6 +15,7 @@ In Project Oak, we use CHERI's memory capability to build isolated domains. At t
 - CHERI toolchain: https://github.com/CTSRD-CHERI/llvm-project
 - CHERI emulator: https://github.com/CTSRD-CHERI/qemu
 - CHERI build: https://github.com/CTSRD-CHERI/cheribuild
+- CHERI OS: https://github.com/CTSRD-CHERI/cherios
 
 ## Disclaimer
 
