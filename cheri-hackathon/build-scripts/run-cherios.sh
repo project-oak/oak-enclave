@@ -7,7 +7,7 @@ CHERI_REPOS_DIR=$REPO_DIR/cheri-repos
 
 echo ===== Running CHERI OS =====
 cd $CHERI_REPOS_DIR/cheribuild
-./cheribuild.py run-cherios -d --source-root $CHERI_REPOS_DIR --output-root $REPO_DIR freestanding-sdk
+./cheribuild.py run-cherios -d
 
 # Creating file with git revision information to identify the build origin
 for repo in `ls -d $CHERI_REPOS_DIR/*/.git`; do (

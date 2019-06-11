@@ -1,0 +1,11 @@
+{
+	"source-root": "${HOME}/workdir/cheri-repos",
+	"build-root": "${HOME}/workdir/cheri-repos/build",
+	"output-root": "${HOME}/workdir",
+	"llvm": {
+		"debug-info": false
+	},
+	"cherios-llvm": {
+		"debug-info": false
+	}
+}

@@ -10,9 +10,8 @@ $THIS_SCRIPT_DIR/checkout-cheri-repos.sh
 
 echo ===== Building CHERI SDK =====
 cd $CHERI_REPOS_DIR/cheribuild
-./cheribuild.py --source-root $CHERI_REPOS_DIR --output-root $REPO_DIR freestanding-sdk
-./cheribuild.py bmake --source-root $CHERI_REPOS_DIR --output-root $REPO_DIR freestanding-sdk
-./cheribuild.py cherios -d --source-root $CHERI_REPOS_DIR --output-root $REPO_DIR freestanding-sdk
+./cheribuild.py bmake freestanding-sdk
+./cheribuild.py cherios -d
 
 # Creating file with git revision information to identify the build origin
 for repo in `ls -d $CHERI_REPOS_DIR/*/.git`; do (

@@ -60,6 +60,18 @@ Run CHERI OS in Qemu:
 build-scripts/run-cheri.sh
 ```
 
+### Try the CHERI OS alice bob demo
+
+Read instructions in cheri-repos/cherios/demos/alice_bob/README.txt. CheriOS has been setup to run this demo automatically when it boots.
+
+Running cherios with
+
+```bash
+cheribuild.py run-cherios
+```
+
+Will allow you to iterate a little faster than using the wrapper script.
+
 ### Start hacking
 TODO: Description of what we need to build is here. \
 TODO: Add some links.

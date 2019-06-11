@@ -30,6 +30,7 @@ RUN apt-get update && \
         gcc \
         g++ \
         libtool \
+	python3-pip \
         && \
     # Installing Clang:
     wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - && \
@@ -38,7 +39,7 @@ RUN apt-get update && \
     apt-get install -y clang-8 lld-8 && \
     # Creating a marker file to easily detect that we're inside docker container:
     touch /.dev-env
-
+RUN pip3 install pyelftools argcomplete
 ## Setting up user/group which matches the user on the host:
 ARG USER=dev
 ARG USER_ID
@@ -53,5 +54,6 @@ ENV HOME=/home/${USER}
 WORKDIR ${HOME}
 
 ## Add stuff here
-
+COPY cheribuild.json ${HOME}/.config/cheribuild.json
+ENV PATH=${PATH}:${HOME}/workdir/cheri-repos/cheribuild
 WORKDIR ${HOME}/workdir
