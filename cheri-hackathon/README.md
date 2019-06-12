@@ -20,7 +20,7 @@ run everything else.
 Clone the repository, goto to the cheri-hackathon directory, and then enter into the development environment shell. This gives everyone deterministic environment with exactly same tools and absolute paths.
  
 ```bash
-git clone https://www.github.com/oak-enclave
+git clone https://github.com/project-oak/oak-enclave
 cd oak-enclave/cheri-hackaton
 ./dev-env.sh
 ```
