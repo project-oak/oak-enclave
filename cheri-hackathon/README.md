@@ -57,7 +57,7 @@ See [lo/README.md](lo/README.md) for instructions.
 ### Run CHERI OS
 Run CHERI OS in Qemu:
 ```bash
-build-scripts/run-cheri.sh
+build-scripts/run-cherios.sh
 ```
 
 ### Try the CHERI OS alice bob demo
